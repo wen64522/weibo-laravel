@@ -1,4 +1,5 @@
 <?php
+$db_config = get_db_config();
 
 return [
 
@@ -14,7 +15,7 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
-
+    'default' => $db_config['connection'],
     /*
     |--------------------------------------------------------------------------
     | Database Connections
